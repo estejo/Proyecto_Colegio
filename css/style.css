@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*! ------------------------------------- header -----------------------------------------------------------------------------------------------------------*/
+
+header{
+    background-color: #F54703;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    height: 20vh;
+}
+
+header div a img{
+    width: 70px;
+    height: 70px;
+}
+
+header div h1{
+    font-family: "Zain", sans-serif;
+    font-size: 30px;
+    font-style:normal;
+    color: white;
+    padding: 5px;
+}
+
+header div nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header div nav ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+/*? ------------main -------------------------------------------------------------------------------------------------------*/
+
+main h2{
+    size: 25px;
+}
+
+main h1, h2, h3, p{
+    text-decoration: none;
+}
+
+.hero {
+    height: 60vh;
+    text-align: center;
+    background-image: url('../img/WhatsApp\ Image\ 2024-11-15\ at\ 10.13.25\ AM.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.hero h2{
+    font-family: "Zain", sans-serif;
+    font-size: 50px;
+    font-style:normal;
+    color: white;
+    
+}
+
+.botones { /*definición de propiedades de los botones*/
+    color: white;
+    background-color: #1b1b1b;
+    text-decoration: none; /*saca el subrayado del enlace*/
+    padding: 5px; /*despega de los bordes */
+    border-radius: 15px; /*redondea los bordes del boón*/
+}
+
+.autogestion div{
+    text-align: center;
+    text-decoration: none;
+    display:block; 
+    justify-content: space-between; 
+    align-items: normal;
+}
+
+.autogestion .autogestion-acceso {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autogestion .autogestion-acceso div{
+    width: 33%; /*ancho de la caja*/
+    height: 200px; /*alto de la caja*/
+    text-align: center;
+    margin: 25px;
+}
+
+.autogestion div h2 p{  
+    font-family: "Zain", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    background-color: #1b1b1b;
+    color:white;
+    padding: 20 px;
+}
+
+.vacantes{
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    justify-content: space-between; 
+    align-items:normal; 
+}
+
+.vacantes h2{
+    font-family: "Zain", sans-serif;
+    color: white;
+    background-color: #1b1b1b;
+    text-align: center;
+    font-size: 30px;
+    padding: 20 px;
+}
+
+.vacantes img {
+    width: 20%;  
+    height: 17%;
+    padding: 20 px;
+}
+
+.fechaexamen img{
+    width: 100%;
+    height: 25%;
+}
+
+.misionvisionvalores {
+    width: 100%; /*ancho de la caja*/
+    height: 200px; 
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex; 
+    justify-content: space-between; 
+    align-items:normal; 
+    margin: 10px; 
+}
+
+.misionvisionvalores .mision {
+    width: 33%;
+    color: white;
+    background-color: #464545;
+    flex-direction: column;
+}
+
+.misionvisionvalores .vision {
+    width: 33%;
+    color: white;
+    background-color: #f54703;
+    flex-direction: column;
+}
+
+.misionvisionvalores .valores {
+    width: 33%;
+    color: white;
+    background-color: #ff7518;
+    flex-direction: column;
+}
+
+.niveles .niveles-tarjetas{
+    width:100%; /*ancho de la caja*/
+    background-color: white;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items:center;
+    margin:10px; 
+}
+
+.niveles .niveles-tarjetas h2{
+    width: 100%;
+    height:150px;
+    font-family: "Zain", sans-serif;
+    color: white;
+    background-color: #464545;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.direccion{
+    background-color: white;
+}
+
+.ubicacion{
+    background-color: white;
+}
+
+.consulta{
+    background-color: white;
+}
+
+/* ------- footer --------------------------------------------------------------------------------------------------------*/
+
+footer img{
+    width: 80px; 
+    height: 80px;
+}
+
+footer{
+    text-align: center;
+    background-color:rgb(241, 180, 9) ;
+    font: size 25px;
+    color:black;
+    font-family: "Zain", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
