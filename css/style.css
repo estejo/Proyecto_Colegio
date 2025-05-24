@@ -14,7 +14,7 @@ body{
 /*! ------------------------------------- header -----------------------------------------------------------------------------------------------------------*/
 
 header{
-    background-color: #F54703;
+    background-color: white;
     padding: 5px;
     position: sticky;
     top: 0;
@@ -23,19 +23,12 @@ header{
     align-items: center;
     font-size: 30px;
     height: 20vh;
+    z-index: 1;
 }
 
 header div a img{
-    width: 70px;
-    height: 70px;
-}
-
-header div h1{
-    font-family: "Zain", sans-serif;
-    font-size: 30px;
-    font-style:normal;
-    color: white;
-    padding: 5px;
+    width: 100px;
+    height: 100px;
 }
 
 header div nav ul{
@@ -46,7 +39,7 @@ header div nav ul{
 header div nav ul li a{
     font-size: 30px;
     text-decoration: none;
-    color: white;
+    color: black;
     margin: 10px;
 }
 
@@ -63,14 +56,14 @@ main h1, h2, h3, p{
 .hero {
     height: 60vh;
     text-align: center;
-    background-image: url('../img/WhatsApp\ Image\ 2024-11-15\ at\ 10.13.25\ AM.jpeg');
+    background-image: url('../img/banner-peregrinos.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -79,7 +72,6 @@ main h1, h2, h3, p{
     font-size: 50px;
     font-style:normal;
     color: white;
-    
 }
 
 .botones { /*definición de propiedades de los botones*/
@@ -95,7 +87,7 @@ main h1, h2, h3, p{
     text-decoration: none;
     display:block; 
     justify-content: space-between; 
-    align-items: normal;
+    align-items: center;
 }
 
 .autogestion .autogestion-acceso {
@@ -107,15 +99,17 @@ main h1, h2, h3, p{
 
 .autogestion .autogestion-acceso div{
     width: 33%; /*ancho de la caja*/
-    height: 200px; /*alto de la caja*/
+    height: 230px; /*alto de la caja*/
     text-align: center;
     margin: 25px;
+    flex-direction: column;
+    align-items:center;
 }
 
-.autogestion div h2 p{  
+.autogestion .autogestion-acceso div h2 p{  
     font-family: "Zain", sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     background-color: #1b1b1b;
     color:white;
     padding: 20 px;
@@ -131,12 +125,13 @@ main h1, h2, h3, p{
 }
 
 .vacantes h2{
+    width: 100%;
     font-family: "Zain", sans-serif;
     color: white;
-    background-color: #1b1b1b;
+    background-color: #464545;
     text-align: center;
     font-size: 30px;
-    padding: 20 px;
+    padding: 5px;
 }
 
 .vacantes img {
@@ -148,39 +143,51 @@ main h1, h2, h3, p{
 .fechaexamen img{
     width: 100%;
     height: 25%;
+    object-fit: cover;
 }
 
-.misionvisionvalores {
+.misionvisionvalores .misionvisionvalores-tarjetas{
     width: 100%; /*ancho de la caja*/
-    height: 200px; 
-    background-color: white;
-    text-align: center;
-    text-decoration: none;
+    height: 230px; 
     display: flex; 
-    justify-content: space-between; 
-    align-items:normal; 
-    margin: 10px; 
+    justify-content: space-around; 
+    align-items:center; 
+    text-align: center;
+    font-family: "Zain", sans-serif;
+    color: white;
+    margin: 15px;
 }
 
-.misionvisionvalores .mision {
-    width: 33%;
-    color: white;
+.misionvisionvalores-tarjetas .mision {
+    width: 30%;
+    height: 100%;
     background-color: #464545;
     flex-direction: column;
+    display: grid;
+    place-items: center;
+    padding: 10px;   
 }
 
-.misionvisionvalores .vision {
-    width: 33%;
-    color: white;
+.misionvisionvalores-tarjetas .vision {
+    width: 30%;
+    height: 100%;
     background-color: #f54703;
     flex-direction: column;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    padding: 10px;   
 }
 
-.misionvisionvalores .valores {
-    width: 33%;
-    color: white;
+.misionvisionvalores-tarjetas .valores {
+    width: 30%;
+    height: 100%;
     background-color: #ff7518;
     flex-direction: column;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    padding: 10px;  
 }
 
 .niveles .niveles-tarjetas{
@@ -192,15 +199,25 @@ main h1, h2, h3, p{
     margin:10px; 
 }
 
-.niveles .niveles-tarjetas h2{
+.niveles h2{
     width: 100%;
-    height:150px;
     font-family: "Zain", sans-serif;
     color: white;
     background-color: #464545;
     text-align: center;
     font-size: 30px;
     padding: 5px;
+}
+
+.MED { /*acceso a whatsapp que se desplaza a lo laargo de la página*/
+    position: fixed; /*para fijar*/
+    bottom: 50px;
+    right: 20px;
+}
+
+.MED img{
+    width: 100%;
+    height: 100%;
 }
 
 .direccion{
@@ -218,16 +235,16 @@ main h1, h2, h3, p{
 /* ------- footer --------------------------------------------------------------------------------------------------------*/
 
 footer img{
-    width: 80px; 
-    height: 80px;
+    width: 70px; 
+    height: 70px;
 }
 
 footer{
     text-align: center;
-    background-color:rgb(241, 180, 9) ;
-    font: size 25px;
-    color:black;
+    background-color: #f54703 ;
+    font: size 30px;
+    color: white;
     font-family: "Zain", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 }
