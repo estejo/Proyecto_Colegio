@@ -265,33 +265,48 @@ main h1, h2, h3, p{
 .colegio .img-fachada img{ /*estilos para la imagen de bienvenidos*/
     width: 600px;
     height: 800px;
+    padding: 5px;
+    margin: 25px;
 }
 
 .autoridades{
+    width: 100%;
     background-color: white;
     text-align: center;
     text-decoration: none;
-    display: block; 
+    display: flex; 
     justify-content: space-between; 
     align-items:normal;
-    padding: 20 px; 
+    padding: 20 px;
+    margin: 25px;
 }
 
-.autoridades h2{
-    width: 100%;
+.autoridades h2 {
     font-family: "Zain", sans-serif;
     color: white;
     background-color: #464545;
     text-align: center;
     font-size: 30px;
     padding: 5px;
+    margin: 25px;
+}
+.autoridades li {
+    width: 80%;
+    font-family: "Zain", sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    padding: 5px;
+    margin: 25px;
 }
 
 .autoridades div img {
-    width: 50%;  
-    height: 50%;
-    margin: 20 px;
+    width: 400px;  
+    height: 400px;
+    padding: 5px;
+    margin: 25px;
 }
+
 
 /*----------------------------------------Página Niveles -----------------------------*/
 
@@ -453,18 +468,125 @@ main h1, h2, h3, p{
     object-fit: cover; /*para que la imagen no se vea estirada*/
 }
 
+/*-----------------------------------------página Pastoral -----------------------------------------*/
+
+.pastoral h2 {
+    font-family: "Zain", sans-serif;
+    color: white;
+    background-color: #464545;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin: 25px;
+}
+
+.pastoral-logo{
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex; 
+    justify-content: space-between; 
+    align-items:normal;
+    padding: 20 px;
+    margin: 25px;
+}
+
+.pastoral-logo img {
+    width: 200px;  
+    height: 200px;
+    padding: 5px;
+    margin: 25px;
+}
+
+.pastoral-logo p {
+    width: 100%;
+    font-family: "Zain", sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    padding: 5px;
+    margin: 25px;
+}
+
+.grid-accionespastorales{
+    margin: 25px;
+    display: grid;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-pastoral{
+    background-color: #ff7518;
+}
+
+.grid-accionespastorales div img{
+    width: 100%; /*la imagen ocupa el 100% del ancho*/
+    height: 100%; /*la imagen ocupa el 100% del alto*/
+    object-fit: cover; /*para que la imagen no se vea estirada*/
+}
+
+.grid-pastoral img{
+    position: relative; /*posiciona la imagen por detras*/
+}
+
+.grid-pastoral h2{
+    font-family: "Zain", sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.grid-pastoral p{
+    font-family: "Zain", sans-serif;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    padding: 25px;
+    margin: 5px;
+}
+
 /*-----------------------------------------página COntacto -----------------------------------------*/
 
-.direccion{
-    background-color: white;
-}
-
 .ubicacion{
-    background-color: white;
+    margin: 5px;
+    display: flex;
+    justify-content:space-around; 
+    align-items:center;
 }
 
+.direccion p {
+    font-family: "Zain", sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    text-align: left;
+}
+
+.consulta h2 {
+    font-family: "Zain", sans-serif;
+    color: white;
+    background-color: #464545;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin: 25px;
+}
 .consulta{
-    background-color: white;
+    margin: 5px;
+    display: block;
+    justify-content:left; 
+    align-items:center;
+    font-family: "Zain", sans-serif;
+    font-size: 20px;
+}
+
+.consulta form{
+    font-family: "Zain", sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin: 25px;
 }
 
 /* ------- footer --------------------------------------------------------------------------------------------------------*/
