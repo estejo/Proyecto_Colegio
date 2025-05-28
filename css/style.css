@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -48,13 +49,10 @@ header img {
 /*? ------------main -------------------------------------------------------------------------------------------------------*/
 
 main h2 {
-    size: 25px;
+    font-size: 25px;
 }
 
-main h1,
-h2,
-h3,
-p {
+a {
     text-decoration: none;
 }
 
@@ -82,6 +80,7 @@ p {
 .botones {
     /*definición de propiedades de los botones*/
     color: white;
+    text-align: center;
     background-color: #1b1b1b;
     text-decoration: none;
     /*saca el subrayado del enlace*/
@@ -95,9 +94,17 @@ p {
 .autogestion div {
     text-align: center;
     text-decoration: none;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+}
+
+.autogestion h2 {
+    width: 100%;
+    font-family: "Zain", sans-serif;
+    color: white;
+    background-color: #464545;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
 }
 
 .autogestion .autogestion-acceso {
@@ -107,14 +114,7 @@ p {
     align-items: center;
 }
 
-.autogestion .autogestion-acceso div {
-    width: 33%;
-    height: 250px;
-    text-align: center;
-    margin: 25px;
-}
-
-.autogestion .autogestion-acceso div h2 {
+.autogestion .autogestion-acceso h2 {
     font-family: "Zain", sans-serif;
     text-align: center;
     font-size: 30px;
@@ -123,12 +123,13 @@ p {
     padding: 20 px;
 }
 
-.autogestion .autogestion-acceso p {
-    font-family: "Zain", sans-serif;
-    text-align: center;
-    font-size: 20px;
-    color: black;
-    padding: 20 px;
+.autogestion .autogestion-acceso div {
+    width: 33%;
+    height: 250px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .autogestion .autogestion-acceso div img {
@@ -141,7 +142,6 @@ p {
     text-align: center;
     text-decoration: none;
     display: block;
-    justify-content: space-between;
     align-items: normal;
 }
 
@@ -157,7 +157,7 @@ p {
 
 .vacantes img {
     width: 20%;
-    height: 17%;
+    height: 20%;
     padding: 20 px;
 }
 
@@ -267,27 +267,24 @@ p {
 
 /*----------------------------------------Página Colegio -----------------------------*/
 .colegio {
-    margin: 15px;
+    margin: 50px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.colegio div {
-    width: 50%;
-}
-
-.colegio .texto-colegio p {
+.texto-colegio p {
     font-family: "Zain", sans-serif;
     font-size: 20px;
-    padding: 15px;
+    padding: 50px;
+    margin: 20px;
     text-align: justify;
 }
 
 .colegio .img-fachada img {
     /*estilos para la imagen de bienvenidos*/
-    width: 600px;
-    height: 800px;
+    width: 400px;
+    height: auto;
     padding: 5px;
     margin: 25px;
 }
@@ -296,15 +293,15 @@ p {
     width: 100%;
     background-color: white;
     text-align: center;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: normal;
-    padding: 20 px;
-    margin: 25px;
+    padding: 10 px;
+    margin: 20 px;
 }
 
 .autoridades h2 {
+    width: 96%;
     font-family: "Zain", sans-serif;
     color: white;
     background-color: #464545;
@@ -315,7 +312,7 @@ p {
 }
 
 .autoridades li {
-    width: 80%;
+    width: 93%;
     font-family: "Zain", sans-serif;
     color: black;
     text-align: justify;
@@ -335,7 +332,7 @@ p {
 /*----------------------------------------Página Niveles -----------------------------*/
 
 .nivelinicial {
-    height: 90vh;
+    padding:85px;
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -345,6 +342,7 @@ p {
 .nivelinicial .img-nivelinicial img {
     width: 300px;
     height: 300px;
+    display: flex;
 
 }
 
@@ -355,6 +353,8 @@ p {
     padding: 5px;
     text-align: justify;
     background-color: rgba(0, 0, 255, 0.363);
+    margin:auto;
+    pading: auto;
 }
 
 .nivelinicial .texto-nivelinicial a {
@@ -367,7 +367,6 @@ p {
 .grid-galeria-inicial {
     margin: 15px;
     display: grid;
-    /*grid-template-rows: 200px 200px 200px;*/
     grid-auto-rows: 250px;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -375,12 +374,10 @@ p {
 
 .img-7 {
     grid-column: span 2;
-    /*expande para que una imagen ocupe dos lugares a lo ancho*/
 }
 
 .img-6 {
     grid-row: span 2;
-    /*expande para que una imagen ocupe dos lugares a lo ancho*/
 }
 
 .grid-galeria-inicial div img {
@@ -457,6 +454,10 @@ p {
     width: 300px;
     height: 300px;
 
+}
+
+.niveles .texto-nivelsecundario div{
+    background-color: rgba(255, 166, 0, 0.582);
 }
 
 .nivelsecundario .texto-nivelsecundario p {
@@ -584,13 +585,13 @@ p {
     margin: 5px;
 }
 
-/*-----------------------------------------página COntacto -----------------------------------------*/
+/*-----------------------------------------página Contacto -----------------------------------------*/
 
 .ubicacion {
     margin: 120px;
     display: flex;
     justify-content: space-around;
-    align-items:self-end;
+    align-items: self-end;
 }
 
 .direccion p {
@@ -641,4 +642,346 @@ footer {
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/* ---------------------------@media query Inicio---------------------------*/
+
+@media screen and (max-width:1055px) {
+    .misionvisionvalores .misionvisionvalores-tarjetas {
+        height: auto;
+        align-items: stretch;
+        margin: 15px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .misionvisionvalores-tarjetas .mision {
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .misionvisionvalores-tarjetas .vision {
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .misionvisionvalores-tarjetas .valores {
+        min-width: 280px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width:915px) {
+    .autogestion .autogestion-acceso {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .autogestion .autogestion-acceso div {
+        width: 30%;
+        min-width: 280px;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .autogestion .autogestion-acceso div h2 {
+        padding: 10px;
+    }
+
+    .autogestion .autogestion-acceso p {
+        padding: 10px 0;
+    }
+
+    .autogestion .autogestion-acceso div img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .botones {
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:594px) {
+    body {
+        padding-top: 9vh;
+    }
+
+    .vacantes {
+        padding: 20px 0;
+    }
+
+    .vacantes div {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .vacantes img {
+        width: 25%;
+        max-width: 300px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fechaexamen img {
+        height: auto;
+    }
+
+    .niveles .niveles-tarjetas img {
+        width: 30%;
+        margin: 0;
+    }
+}
+
+/*********************media queries Colegio***************************/
+
+@media screen and (max-width: 1286px){
+    .colegio{
+        flex-direction: column;
+        margin: 20px;
+        padding: 0;
+        align-items: center;
+    }
+    .colegio .img-fachada{
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+.colegio .texto-colegio {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.colegio .texto-colegio p {
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.autoridades {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    padding: 10px;
+}
+
+.imagen-autoridades {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.imagen-autoridades h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.imagen-autoridades img {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.objetivosinstitucionales {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: justify;
+}
+
+.objetivosinstitucionales h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.objetivosinstitucionales li {
+    font-size: 17px;
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-position: inside;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .colegio {
+        margin: 5px;
+        padding: 0;
+    }
+
+    .colegio .texto-colegio p {
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 0 px;
+        text-align: justify;
+    }
+
+    .imagen-autoridades h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .objetivosinstitucionales h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .colegio .img-fachada {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        text-align: center;
+        font: size 20px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .colegio {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .colegio .texto-colegio p {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .imagen-autoridades h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .objetivosinstitucionales h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .colegio .img-fachada {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+    }
+}
+
+/***********************queries Niveles ***********************/
+
+@media screen and (max-width: 1316px) {
+    .nivelinicial {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+    .niveleinicial{
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    }
+    .nivelprimario {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+    .nivelprimario{
+    padding: auto;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    }
+    .nivelsecundario {
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+    .nivelsecundario{
+    padding: auto;
+    margin: 15 px;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+/****************queries contacto ****************************/
+
+@media screen and (max-width:880px) {
+    .ubicacion{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .ubicacion div {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .ubicacion{
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 50%;
+        margin: 15px;
+        text-align: center;
+    }
+    .mapa {
+        margin: auto;
+        justify-content: center;
+        margin: 15px;
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ubicacion{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .mapa {
+        margin: auto;
+        justify-content: center;
+        width: 70%;
+        height: auto;
+    }
+    .consulta h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    margin: 25px;
+    }  
 }
