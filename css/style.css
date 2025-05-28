@@ -10,6 +10,8 @@ body {
     font-family: "Zain", sans-serif;
     font-weight: 300;
     font-style: normal;
+    height: 100vh;
+    padding-top: 80px;
 }
 
 p::selection {
@@ -253,7 +255,7 @@ a {
 }
 
 .MED {
-    /*acceso a whatsapp que se desplaza a lo laargo de la página*/
+    /*acceso a MED que se desplaza a lo laargo de la página*/
     position: fixed;
     /*para fijar*/
     bottom: 50px;
@@ -265,7 +267,7 @@ a {
     height: 100%;
 }
 
-/*----------------------------------------Página Colegio -----------------------------*/
+/*----------------------------------------Página Colegio --------------------------------------------------------------------------*/
 .colegio {
     margin: 50px;
     display: flex;
@@ -282,7 +284,7 @@ a {
 }
 
 .colegio .img-fachada img {
-    /*estilos para la imagen de bienvenidos*/
+    /*estilos para la imagen de la fachada del colegio*/
     width: 400px;
     height: auto;
     padding: 5px;
@@ -329,10 +331,9 @@ a {
 }
 
 
-/*----------------------------------------Página Niveles -----------------------------*/
+/*----------------------------------------Página Niveles ---------------------------------------------------------------------------*/
 
 .nivelinicial {
-    padding:85px;
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -353,7 +354,7 @@ a {
     padding: 5px;
     text-align: justify;
     background-color: rgba(0, 0, 255, 0.363);
-    margin:auto;
+    margin: auto;
     padding: auto;
 }
 
@@ -456,7 +457,7 @@ a {
 
 }
 
-.niveles .texto-nivelsecundario div{
+.niveles .texto-nivelsecundario div {
     background-color: rgba(255, 166, 0, 0.582);
 }
 
@@ -501,7 +502,7 @@ a {
     /*para que la imagen no se vea estirada*/
 }
 
-/*-----------------------------------------página Pastoral -----------------------------------------*/
+/*-----------------------------------------página Pastoral ------------------------------------------------------------------------*/
 
 .pastoral h2 {
     font-family: "Zain", sans-serif;
@@ -555,16 +556,13 @@ a {
 
 .grid-accionespastorales div img {
     width: 100%;
-    /*la imagen ocupa el 100% del ancho*/
     height: 100%;
-    /*la imagen ocupa el 100% del alto*/
     object-fit: cover;
     /*para que la imagen no se vea estirada*/
 }
 
 .grid-pastoral img {
     position: relative;
-    /*posiciona la imagen por detras*/
 }
 
 .grid-pastoral h2 {
@@ -585,7 +583,7 @@ a {
     margin: 5px;
 }
 
-/*-----------------------------------------página Contacto -----------------------------------------*/
+/*-----------------------------------------página Contacto -------------------------------------------------------------------------*/
 
 .ubicacion {
     margin: 120px;
@@ -644,7 +642,7 @@ footer {
     font-style: normal;
 }
 
-/* ---------------------------@media query Inicio---------------------------*/
+/********************************@media query Inicio **********************************************************************/
 
 @media screen and (max-width:1055px) {
     .misionvisionvalores .misionvisionvalores-tarjetas {
@@ -748,240 +746,906 @@ footer {
     }
 }
 
-/*********************media queries Colegio***************************/
+/*********************media queries Colegio*******************************************************************************************/
 
-@media screen and (max-width: 1286px){
-    .colegio{
+@media screen and (max-width: 1340px) {
+    .colegio {
+        margin: 30px;
         flex-direction: column;
-        margin: 20px;
-        padding: 0;
+        /* Apila la imagen y el texto */
         align-items: center;
+        /* Centra los elementos apilados */
     }
-    .colegio .img-fachada{
+
+    .colegio .img-fachada img {
+        width: 350px;
+        margin: 15px;
+    }
+
+    .texto-colegio p {
+        padding: 30px;
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .autoridades {
+        flex-direction: column;
+        /* Apila la secciones de autoridades */
+        align-items: center;
+        /* Centra los elementos apilados */
+        margin: 30px;
+        padding: 15px;
+    }
+
+    .autoridades h2 {
+        font-size: 26px;
+        margin: 15px auto;
+        /* Centra el título */
         width: 90%;
-        max-width: 300px;
+        /* Ajusta el ancho para que no sea tan grande */
+    }
+
+    .autoridades div img {
+        width: 350px;
+        height: 350px;
+        margin: 15px;
+    }
+
+    .autoridades li {
+        width: 90%;
+        font-size: 18px;
+        margin: 15px auto;
+        /* Centra la lista */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .colegio {
+        margin: 20px;
+    }
+
+    .colegio .img-fachada img {
+        width: 300px;
+        margin: 10px;
+    }
+
+    .texto-colegio p {
+        padding: 20px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .autoridades {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .autoridades h2 {
+        font-size: 24px;
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .autoridades div img {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .autoridades li {
+        width: 95%;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .colegio {
+        margin: 15px;
+    }
+
+    .colegio .img-fachada img {
+        width: 250px;
+        margin: 8px;
+    }
+
+    .texto-colegio p {
+        padding: 15px;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .autoridades {
+        margin: 15px;
+        padding: 8px;
+    }
+
+    .autoridades h2 {
+        font-size: 22px;
+        margin: 8px auto;
+        width: 98%;
+    }
+
+    .autoridades div img {
+        width: 250px;
+        height: 250px;
+        margin: 8px;
+    }
+
+    .autoridades li {
+        width: 98%;
+        font-size: 15px;
+        padding: 5px;
+        margin: 8px auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+    }
+
+    footer div img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .colegio {
+        margin: 10px;
+    }
+
+    .colegio .img-fachada img {
+        width: 100%;
+        max-width: 200px;
+        margin: 5px auto;
+        /* Centra la imagen */
+    }
+
+    .texto-colegio p {
+        padding: 10px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .autoridades {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .autoridades h2 {
+        font-size: 20px;
+        margin: 5px auto;
+    }
+
+    .autoridades div img {
+        width: 100%;
+        max-width: 200px;
         height: auto;
-        margin: 0 auto;
-        padding: 0;
+        margin: 5px auto;
+        /* Centra la imagen */
     }
 
-.colegio .texto-colegio {
-    width: 95%;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-}
-
-.colegio .texto-colegio p {
-    font-size: 20px;
-    padding: 10px 0;
-    text-align: justify;
-}
-
-.autoridades {
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 20px;
-    padding: 10px;
-}
-
-.imagen-autoridades {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.imagen-autoridades h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.imagen-autoridades img {
-    width: 80%;
-    max-width: 350px;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.objetivosinstitucionales {
-    width: 70%;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: justify;
-}
-
-.objetivosinstitucionales h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.objetivosinstitucionales li {
-    font-size: 17px;
-    margin-bottom: 5px;
-    padding: 0;
-    list-style-position: inside;
+    .autoridades li {
+        font-size: 14px;
+        padding: 5px;
+        margin: 5px auto;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 350px) {
     .colegio {
         margin: 5px;
-        padding: 0;
     }
 
-    .colegio .texto-colegio p {
-        font-size: 20px;
-        margin: 0 auto;
-        padding: 0 px;
-        text-align: justify;
+    .colegio .img-fachada img {
+        width: 90%;
+        max-width: 180px;
+        margin: 5px auto;
     }
 
-    .imagen-autoridades h2 {
-        width: 100%;
-        font-size: 20px;
+    .texto-colegio p {
+        padding: 5px;
+        margin: 5px;
+        font-size: 13px;
     }
 
-    .objetivosinstitucionales h2 {
-        width: 100%;
-        font-size: 20px;
+    .autoridades {
+        margin: 5px;
+        padding: 5px;
     }
 
-    .colegio .img-fachada {
-        width: auto;
+    .autoridades h2 {
+        font-size: 18px;
+        margin: 5px auto;
+    }
+
+    .autoridades div img {
+        width: 90%;
+        max-width: 180px;
         height: auto;
-        margin: 0 auto;
-        padding: 0;
+        margin: 5px auto;
+    }
+
+    .autoridades li {
+        font-size: 13px;
+        padding: 3px;
+        margin: 5px auto;
+    }
+}
+
+/***********************queries Niveles ********************************************************************************************/
+@media screen and (max-width: 1259px) {
+
+    .nivelinicial,
+    .nivelprimario,
+    .nivelsecundario {
+        flex-direction: column;
         align-items: center;
+        margin: 30px 15px;
+    }
+
+    .nivelinicial .img-nivelinicial img,
+    .nivelprimario .img-nivelprimario img,
+    .nivelsecundario .img-nivelsecundario img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .nivelinicial .texto-nivelinicial,
+    .nivelprimario .texto-nivelprimario,
+    .nivelsecundario .texto-nivelsecundario {
+        margin-left: 0;
+        /* Eliminar margen lateral cuando están apilados */
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .nivelinicial .texto-nivelinicial p,
+    .nivelprimario .texto-nivelprimario p,
+    .nivelsecundario .texto-nivelsecundario p {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .nivelinicial .texto-nivelinicial a,
+    .nivelprimario .texto-nivelprimario a,
+    .nivelsecundario .texto-nivelsecundario a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .grid-galeria-inicial,
+    .grid-galeria-primaria,
+    .grid-galeria-secundaria {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas en lugar de 3 */
+        grid-auto-rows: 200px;
+        /* Ajustar altura de filas */
+        margin: 30px 15px;
+    }
+
+    /* Resetear las expansiones para que se adapten a las 2 columnas */
+    .img-7,
+    .img-4 {
+        grid-column: span 1;
+    }
+
+    .img-6,
+    .img-5,
+    .img-1,
+    .img-3 {
+        grid-row: span 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .nivelinicial,
+    .nivelprimario,
+    .nivelsecundario {
+        margin: 25px 10px;
+    }
+
+    .nivelinicial .img-nivelinicial img,
+    .nivelprimario .img-nivelprimario img,
+    .nivelsecundario .img-nivelsecundario img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .nivelinicial .texto-nivelinicial p,
+    .nivelprimario .texto-nivelprimario p,
+    .nivelsecundario .texto-nivelsecundario p {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .nivelinicial .texto-nivelinicial a,
+    .nivelprimario .texto-nivelprimario a,
+    .nivelsecundario .texto-nivelsecundario a {
+        font-size: 16px;
+    }
+
+    .grid-galeria-inicial,
+    .grid-galeria-primaria,
+    .grid-galeria-secundaria {
+        grid-auto-rows: 180px;
+        /* Ajustar altura de filas */
+        gap: 8px;
+        /* Reducir espacio entre imágenes */
+        margin: 25px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 56px;
+    }
+
+    .nivelinicial,
+    .nivelprimario,
+    .nivelsecundario {
+        margin: 20px 8px;
+    }
+
+    .nivelinicial .img-nivelinicial img,
+    .nivelprimario .img-nivelprimario img,
+    .nivelsecundario .img-nivelsecundario img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .nivelinicial .texto-nivelinicial p,
+    .nivelprimario .texto-nivelprimario p,
+    .nivelsecundario .texto-nivelsecundario p {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .nivelinicial .texto-nivelinicial a,
+    .nivelprimario .texto-nivelprimario a,
+    .nivelsecundario .texto-nivelsecundario a {
+        font-size: 15px;
+    }
+
+    .grid-galeria-inicial,
+    .grid-galeria-primaria,
+    .grid-galeria-secundaria {
+        grid-template-columns: 1fr;
+        /* Una sola columna para las galerías */
+        grid-auto-rows: auto;
+        /* Dejar que el alto se ajuste al contenido */
+        gap: 5px;
+        /* Reducir espacio entre imágenes */
+        margin: 20px 8px;
+    }
+
+    /* Quitar cualquier expansión de grid en una sola columna */
+    .img-7,
+    .img-4,
+    .img-6,
+    .img-5,
+    .img-1,
+    .img-3 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    /* las imágenes ocupan todo el ancho disponible */
+    .grid-galeria-inicial div img,
+    .grid-galeria-primaria div img,
+    .grid-galeria-secundaria div img {
+        height: auto;
+        /* la altura se ajusta */
+        max-height: 250px;
+        /* Limitar la altura para evitar imágenes muy grandes */
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .nivelinicial,
+    .nivelprimario,
+    .nivelsecundario {
+        margin: 15px 5px;
+    }
+
+    .nivelinicial .img-nivelinicial img,
+    .nivelprimario .img-nivelprimario img,
+    .nivelsecundario .img-nivelsecundario img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 8px;
+    }
+
+    .nivelinicial .texto-nivelinicial p,
+    .nivelprimario .texto-nivelprimario p,
+    .nivelsecundario .texto-nivelsecundario p {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .nivelinicial .texto-nivelinicial a,
+    .nivelprimario .texto-nivelprimario a,
+    .nivelsecundario .texto-nivelsecundario a {
+        font-size: 14px;
+    }
+
+    .grid-galeria-inicial,
+    .grid-galeria-primaria,
+    .grid-galeria-secundaria {
+        margin: 15px 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .nivelinicial,
+    .nivelprimario,
+    .nivelsecundario {
+        margin: 10px 5px;
+    }
+
+    .nivelinicial .img-nivelinicial img,
+    .nivelprimario .img-nivelprimario img,
+    .nivelsecundario .img-nivelsecundario img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+
+    .nivelinicial .texto-nivelinicial p,
+    .nivelprimario .texto-nivelprimario p,
+    .nivelsecundario .texto-nivelsecundario p {
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .nivelinicial .texto-nivelinicial a,
+    .nivelprimario .texto-nivelprimario a,
+    .nivelsecundario .texto-nivelsecundario a {
+        font-size: 13px;
+    }
+
+    .grid-galeria-inicial,
+    .grid-galeria-primaria,
+    .grid-galeria-secundaria {
+        margin: 10px 5px;
+    }
+
+    footer div {
+        text-align: center;
+        margin: 10px;
     }
 
     footer img {
         width: 40px;
         height: 40px;
+        margin: 0 10px;
+    }
+
+    footer p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+
+/*******************************************queries pastoral *******************************************************************************/
+
+@media screen and (max-width: 1340px) {
+    .pastoral-logo {
+        flex-direction: column;
+        /* Apila el logo y el texto */
+        align-items: center;
+        /* Centra los elementos apilados */
+    }
+
+    .pastoral-logo img {
+        margin-bottom: 15px;
+        /* Espacio entre la imagen y el texto */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pastoral h2 {
+        font-size: 26px;
+        margin: 15px;
+    }
+
+    .pastoral-logo {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .pastoral-logo img {
+        width: 150px;
+        height: 150px;
+        margin: 15px 0;
+    }
+
+    .pastoral-logo p {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .grid-accionespastorales {
+        grid-auto-rows: auto;
+        /* el alto de las filas se ajusta al contenido */
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .grid-pastoral h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .grid-pastoral p {
+        font-size: 18px;
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pastoral h2 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .pastoral-logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pastoral-logo p {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .grid-pastoral h2 {
+        font-size: 20px;
+    }
+
+    .grid-pastoral p {
+        font-size: 16px;
+        padding: 10px;
     }
 
     footer {
-        text-align: center;
-        font: size 20px;
-        font-weight: 300;
-    }
-}
-
-@media screen and (max-width:465px) {
-    .colegio {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .colegio .texto-colegio p {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        font-size: 18px;
-        text-align: justify;
-    }
-
-    .imagen-autoridades h2 {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .objetivosinstitucionales h2 {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .colegio .img-fachada {
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        padding: 0;
-        align-items: center;
-    }
-}
-
-/***********************queries Niveles ***********************/
-
-@media screen and (max-width: 1316px) {
-    .nivelinicial {
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%;
-    }
-    .niveleinicial{
-    padding: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    }
-    .nivelprimario {
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%;
-    }
-    .nivelprimario{
-    padding: auto;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    }
-    .nivelsecundario {
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 100%;
-    }
-    .nivelsecundario{
-    padding: auto;
-    margin: 15 px;
-    display: flex;
-    flex-direction: column;
-    }
-}
-
-/****************queries contacto ****************************/
-
-@media screen and (max-width:880px) {
-    .ubicacion{
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .ubicacion div {
-        width: 100%;
         flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+    }
+
+    footer div img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 545px) {
-    .ubicacion{
-        flex-wrap: wrap;
-        gap: 20px;
-        width: 50%;
-        margin: 15px;
+@media screen and (max-width: 480px) {
+    .pastoral h2 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .pastoral-logo {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .pastoral-logo img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .pastoral-logo p {
+        font-size: 15px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .grid-accionespastorales {
+        margin: 10px;
+        gap: 5px;
+    }
+
+    .grid-pastoral h2 {
+        font-size: 18px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .grid-pastoral p {
+        font-size: 14px;
+        padding: 8px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .pastoral h2 {
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .pastoral-logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pastoral-logo p {
+        font-size: 13px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .grid-pastoral h2 {
+        font-size: 16px;
+    }
+
+    .grid-pastoral p {
+        font-size: 13px;
+    }
+}
+
+
+/***********************************************************queries contacto *****************************************************/
+
+@media screen and (max-width: 1340px) {
+    .ubicacion {
+        margin: 60px 20px;
+        /* Reducir márgenes */
+        flex-direction: column;
+        /* Apilar dirección y mapa */
+        align-items: center;
+        /* Centrar elementos apilados */
+    }
+
+    .direccion {
+        margin-right: 0;
+        margin-bottom: 30px;
+        /* Espacio entre dirección y mapa */
         text-align: center;
     }
-    .mapa {
-        margin: auto;
-        justify-content: center;
-        margin: 15px;
-        width: 50%;
-        height: auto;
+
+    .direccion h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .direccion p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        max-width: 500px;
+        /* Limitar el ancho máximo*/
+        height: 280px;
+        /* altura */
+    }
+
+    .consulta h2 {
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .consulta form {
+        margin: 20px;
     }
 }
 
-@media screen and (max-width: 540px) {
-    .ubicacion{
-        flex-wrap: wrap;
-        gap: 20px;
+@media screen and (max-width: 992px) {
+
+    body {
+        padding-top: 90px;
     }
-    .mapa {
-        margin: auto;
-        justify-content: center;
-        width: 70%;
-        height: auto;
+
+    .ubicacion {
+        margin: 40px 15px;
     }
+
+    .direccion h2 {
+        font-size: 26px;
+    }
+
+    .direccion p {
+        font-size: 20px;
+    }
+
+    .mapa iframe {
+        height: 250px;
+    }
+
     .consulta h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5px;
-    margin: 25px;
-    }  
+        font-size: 26px;
+        margin: 15px;
+    }
+
+    .consulta form {
+        margin: 15px;
+    }
+
+    .consulta form {
+        font-size: 16px;
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .consulta form input[type="submit"] {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+
+    .ubicacion {
+        margin: 30px 10px;
+    }
+
+    .direccion {
+        margin-bottom: 20px;
+    }
+
+    .direccion h2 {
+        font-size: 24px;
+    }
+
+    .direccion p {
+        font-size: 18px;
+    }
+
+    .mapa iframe {
+        height: 220px;
+    }
+
+    .consulta h2 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .consulta form {
+        margin: 10px;
+    }
+
+    .consulta form {
+        font-size: 15px;
+        font-size: 16px;
+        padding: 7px 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+    }
+
+    footer div img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ubicacion {
+        margin: 20px 5px;
+    }
+
+    .direccion h2 {
+        font-size: 20px;
+    }
+
+    .direccion p {
+        font-size: 16px;
+    }
+
+    .mapa iframe {
+        height: 180px;
+    }
+
+    .consulta h2 {
+        font-size: 20px;
+        margin: 8px;
+    }
+
+    .consulta form {
+        margin: 8px;
+    }
+
+    .consulta form {
+        font-size: 14px;
+        padding: 6px;
+        font-size: 13px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ubicacion {
+        margin: 15px 5px;
+    }
+
+    .direccion h2 {
+        font-size: 18px;
+    }
+
+    .direccion p {
+        font-size: 14px;
+    }
+
+    .mapa iframe {
+        height: 150px;
+    }
+
+    .consulta h2 {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .consulta form {
+        margin: 5px;
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .footer div {
+        text-align: center;
+        margin: 10px;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+    footer p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
 }
