@@ -202,7 +202,7 @@ header nav div a img {
   background-color: #FF7518;
   align-items: baseline;
 }
-.misionvisionvalores .mision:hover {
+.misionvisionvalores .mision div:hover {
   background-color: rgba(27, 27, 27, 0.7450980392);
 }
 .misionvisionvalores .vision:hover {
@@ -212,6 +212,12 @@ header nav div a img {
   background-color: #e45310;
 }
 
+/*.misionvisionvalores-tarjetas div:hover{
+    transition: 1ms;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}*/
 .niveles {
   text-align: center;
   text-decoration: none;

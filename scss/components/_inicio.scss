@@ -156,8 +156,10 @@
     }
 
     .mision {
+    div {
         &:hover {
             background-color: #1b1b1bbe;
+            }
         }
     }
 
@@ -173,6 +175,13 @@
         }
     }
 }
+
+/*.misionvisionvalores-tarjetas div:hover{
+    transition: 1ms;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}*/
 
 .niveles {
     text-align: center;
