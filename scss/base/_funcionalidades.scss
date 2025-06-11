@@ -1,0 +1,45 @@
+//* VARIABLES
+
+$color-one: #F54703;
+$color-two: #FF7518;
+$color-three: #1b1b1b;
+$color-four: #2F2F2F;
+$color-five: #464545;
+
+//* LISTAS
+
+$font-size:
+10px,
+17px,
+23px,
+25px,
+30px,
+40px,
+50px;
+
+//* EXTEND
+
+%boton{
+    color: white;
+    text-align: center;
+    background-color: #1b1b1b;
+    text-decoration: none;
+    /*saca el subrayado del enlace*/
+    margin: 25px;
+    padding: 5px;
+    /*despega de los bordes */
+    border-radius: 15px;
+    /*redondea los bordes del botón*/
+}
+
+//*MIXIN
+
+@mixin flex($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+
+

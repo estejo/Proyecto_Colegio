@@ -1,0 +1,33 @@
+header {
+    nav {
+        div {
+            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+.nav-link {
+    font-family: "Zain", sans-serif;
+    color: black;
+    font-size: nth($font-size, 5);
+    height: 9vh;
+}
+
+.me-2 {
+    font-family: "Zain", sans-serif;
+    color: black;
+    font-size: nth($font-size, 3);
+    height: 8vh;
+}
+
+.btn-warning {
+    font-family: "Zain", sans-serif;
+    color: black;
+    font-size:  nth($font-size, 3);
+    height: 8vh;
+}

@@ -1,0 +1,40 @@
+.ubicacion {
+    margin: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;
+
+    .direccion {
+        p {
+            font-family: "Zain", sans-serif;
+            font-size: nth($font-size, 4);
+            padding: 5px;
+            text-align: left;
+        }
+    }
+}
+
+.consulta {
+    margin: 5px;
+    display: block;
+    justify-content: left;
+    align-items: center;
+    font-family: "Zain", sans-serif;
+    font-size: nth($font-size, 2);
+
+    h2 {
+        color: white;
+        background-color: $color-five;
+        text-align: center;
+        font-size: nth($font-size, 5);
+        padding: 5px;
+        margin: 25px;
+    }
+
+    form {
+        font-family: "Zain", sans-serif;
+        font-size: nth($font-size, 2);
+        padding: 5px;
+        margin: 25px;
+    }
+}

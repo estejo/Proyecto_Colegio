@@ -1,0 +1,81 @@
+.pastoral {
+    h2 {
+        font-family: "Zain", sans-serif;
+        color: white;
+        background-color: $color-five;
+        text-align: center;
+        font-size: nth($font-size, 5);
+        padding: 5px;
+        margin: 25px;
+    }
+}
+
+.pastoral-logo {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 20px;
+    margin: 25px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        margin: 25px;
+    }
+
+    p {
+        width: 100%;
+        font-family: "Zain", sans-serif;
+        color: black;
+        text-align: justify;
+        font-size: nth($font-size, 2);
+        padding: 5px;
+        margin: 25px;
+    }
+}
+
+.grid-accionespastorales {
+    margin: 25px;
+    display: grid;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.grid-pastoral {
+    background-color: $color-two;
+
+    img {
+        position: relative;
+    }
+
+    h2 {
+        font-family: "Zain", sans-serif;
+        color: black;
+        text-align: center;
+        font-size: nth($font-size, 4);
+        padding: 5px;
+        margin: 5px;
+    }
+
+    p {
+        font-family: "Zain", sans-serif;
+        color: black;
+        text-align: justify;
+        font-size: nth($font-size, 2);
+        padding: 25px;
+        margin: 5px;
+    }
+}

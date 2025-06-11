@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    height: 100vh;
+    padding-top: 80px;
+
+    p {
+        &::selection {
+            background-color: #46454570;
+        }
+        /*subraya con color cuando seleccionamos un texto de un párrafo*/
+    }
+}
+
+h1 {
+    /*agrego título h1 a las páginas*/
+    font-family: "Zain", sans-serif;
+    color: black;
+    text-align: center;
+    font-size: nth($font-size, 6);
+    padding: 5px;
+    margin: 45px;
+}

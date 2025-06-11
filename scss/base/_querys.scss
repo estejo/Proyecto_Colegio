@@ -1,659 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Zain", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    height: 100vh;
-    padding-top: 80px;
-}
-
-p::selection {
-    /*subraya con color cuando seleccionamos un texto de un párrafo*/
-    background-color: #46454570;
-}
-
-/*! ------------------------------------- header -----------------------------------------------------------------------------------------------------------*/
-
-.nav-link {
-    font-family: "Zain", sans-serif;
-    color: black;
-    font-size: 30px;
-    height: 9vh;
-}
-
-.me-2 {
-    font-family: "Zain", sans-serif;
-    color: black;
-    font-size: 23px;
-    height: 8vh;
-}
-
-.btn-warning {
-    font-family: "Zain", sans-serif;
-    color: black;
-    font-size: 23px;
-    height: 8vh;
-}
-
-header img {
-    width: 100px;
-    height: 100px;
-}
-
-h1 { /*agrego título h1 a las páginas*/
-    font-family: "Zain", sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    padding: 5px;
-    margin: 45px;
-}
-
-/*? ------------main -------------------------------------------------------------------------------------------------------*/
-
-main h2 {
-    font-size: 25px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.hero {
-    height: 100vh;
-    text-align: center;
-    background-image: url('../img/banner-peregrinos.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h2 {
-    font-family: "Zain", sans-serif;
-    font-size: 50px;
-    font-style: normal;
-    color: black;
-}
-
-.botones {
-    /*definición de propiedades de los botones*/
-    color: white;
-    text-align: center;
-    background-color: #1b1b1b;
-    text-decoration: none;
-    /*saca el subrayado del enlace*/
-    margin: 25px;
-    padding: 5px;
-    /*despega de los bordes */
-    border-radius: 15px;
-    /*redondea los bordes del botón*/
-}
-
-.autogestion div {
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-}
-
-.autogestion h2 {
-    width: 100%;
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-}
-
-.autogestion .autogestion-acceso {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.autogestion .autogestion-acceso h2 {
-    font-family: "Zain", sans-serif;
-    text-align: center;
-    font-size: 30px;
-    background-color: #1b1b1b;
-    color: white;
-    padding: 20 px;
-}
-
-.autogestion .autogestion-acceso div {
-    width: 33%;
-    height: 250px;
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.autogestion .autogestion-acceso div img {
-    width: 200px;
-    height: 200px;
-}
-
-.vacantes {
-    background-color: white;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    align-items: normal;
-}
-
-.vacantes h2 {
-    width: 100%;
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-}
-
-.vacantes img {
-    width: 20%;
-    height: 20%;
-    padding: 20 px;
-}
-
-.fechaexamen img {
-    width: 100%;
-    height: 25%;
-    object-fit: cover;
-}
-
-.misionvisionvalores .misionvisionvalores-tarjetas {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    font-family: "Zain", sans-serif;
-    color: white;
-    margin: 15px;
-}
-
-.misionvisionvalores-tarjetas .mision {
-    width: 30%;
-    height: 100%;
-    background-color: #464545;
-    flex-direction: column;
-    display: grid;
-    place-items: center;
-    padding: 10px;
-}
-
-.misionvisionvalores .mision:hover {
-    /*interacción de la tarjeta*/
-    background-color: #1b1b1bbe;
-}
-
-.misionvisionvalores-tarjetas .vision {
-    width: 30%;
-    height: 100%;
-    background-color: #f54703;
-    flex-direction: column;
-    align-items: center;
-    display: grid;
-    place-items: center;
-    padding: 10px;
-}
-
-.misionvisionvalores .vision:hover {
-    /*interacción de la tarjeta*/
-    background-color: #f54803d7;
-}
-
-.misionvisionvalores-tarjetas .valores {
-    width: 30%;
-    height: 100%;
-    background-color: #ff7518;
-    flex-direction: column;
-    align-items: baseline;
-
-    padding: 10px;
-}
-
-.misionvisionvalores .valores:hover {
-    /*interacción de la tarjeta*/
-    background-color: #e45310;
-}
-
-.niveles {
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.niveles h2 {
-    width: 100%;
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-}
-
-.niveles .niveles-tarjetas div {
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 5px;
-}
-
-.MED {
-    /*acceso a MED que se desplaza a lo laargo de la página*/
-    position: fixed;
-    /*para fijar*/
-    bottom: 50px;
-    right: 20px;
-}
-
-.MED a img{
-    width: 100%;
-    height: 100%;
-}
-
-/*----------------------------------------Página Colegio --------------------------------------------------------------------------*/
-
-.colegio {
-    margin: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-.texto-colegio p {
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 50px;
-    margin: 20px;
-    text-align: justify;
-}
-
-.colegio .img-fachada img {
-    /*estilos para la imagen de la fachada del colegio*/
-    width: 400px;
-    height: auto;
-    padding: 5px;
-    margin: 25px;
-}
-
-.autoridades {
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: normal;
-    padding: 10 px;
-    margin: 20 px;
-}
-
-.autoridades h2 {
-    width: 96%;
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.autoridades li {
-    width: 93%;
-    font-family: "Zain", sans-serif;
-    color: black;
-    text-align: justify;
-    font-size: 20px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.autoridades div img {
-    width: 400px;
-    height: 400px;
-    padding: 5px;
-    margin: 25px;
-}
-
-
-/*----------------------------------------Página Niveles ---------------------------------------------------------------------------*/
-
-.nivelinicial {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nivelinicial .img-nivelinicial img {
-    width: 300px;
-    height: 300px;
-    display: flex;
-
-}
-
-.nivelinicial .texto-nivelinicial p {
-    width: 95%;
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-    background-color: rgba(0, 0, 255, 0.363);
-    margin: auto;
-    padding: auto;
-}
-
-.nivelinicial .texto-nivelinicial a {
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-}
-
-.grid-galeria-inicial {
-    margin: 15px;
-    display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.img-7 {
-    grid-column: span 2;
-}
-
-.img-6 {
-    grid-row: span 2;
-}
-
-.grid-galeria-inicial div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /*para que la imagen no se vea estirada*/
-}
-
-
-.nivelprimario {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nivelprimario .img-nivelprimario img {
-    width: 300px;
-    height: 300px;
-
-}
-
-.nivelprimario .texto-nivelprimario p {
-    width: 95%;
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-    background-color: rgba(2, 112, 2, 0.466);
-}
-
-.nivelprimario .texto-nivelprimario a {
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-}
-
-.grid-galeria-primaria {
-    margin: 15px;
-    display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.img-4 {
-    grid-column: span 2;
-    grid-row: span 2;
-    /*expande para que una imagen ocupe dos lugares a lo ancho*/
-}
-
-.img-5 {
-    grid-row: span 3;
-    /*expande para que una imagen ocupe tres lugares a lo ancho*/
-}
-
-.grid-galeria-primaria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /*para que la imagen no se vea estirada*/
-}
-
-.nivelsecundario {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nivelsecundario .img-nivelsecundario img {
-    width: 300px;
-    height: 300px;
-
-}
-
-.niveles .texto-nivelsecundario div {
-    background-color: rgba(255, 166, 0, 0.582);
-}
-
-.nivelsecundario .texto-nivelsecundario p {
-    width: 95%;
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-    background-color: rgba(255, 166, 0, 0.582);
-}
-
-.nivelsecundario .texto-nivelsecundario a {
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    text-align: justify;
-}
-
-.grid-galeria-secundaria {
-    margin: 15px;
-    display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.img-1 {
-    grid-row: span 2;
-    /*expande para que una imagen ocupe dos lugares a lo ancho*/
-}
-
-.img-3 {
-    grid-row: span 2;
-    /*expande para que una imagen ocupe dos lugares a lo ancho*/
-}
-
-.grid-galeria-secundaria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /*para que la imagen no se vea estirada*/
-}
-
-/*-----------------------------------------página Pastoral ------------------------------------------------------------------------*/
-
-.pastoral h2 {
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.pastoral-logo {
-    background-color: white;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: normal;
-    padding: 20 px;
-    margin: 25px;
-}
-
-.pastoral-logo img {
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.pastoral-logo p {
-    width: 100%;
-    font-family: "Zain", sans-serif;
-    color: black;
-    text-align: justify;
-    font-size: 20px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.grid-accionespastorales {
-    margin: 25px;
-    display: grid;
-    grid-auto-rows: 400px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.grid-pastoral {
-    background-color: #ff7518;
-}
-
-.grid-accionespastorales div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /*para que la imagen no se vea estirada*/
-}
-
-.grid-pastoral img {
-    position: relative;
-}
-
-.grid-pastoral h2 {
-    font-family: "Zain", sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 25px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.grid-pastoral p {
-    font-family: "Zain", sans-serif;
-    color: black;
-    text-align: justify;
-    font-size: 20px;
-    padding: 25px;
-    margin: 5px;
-}
-
-/*-----------------------------------------página Contacto -------------------------------------------------------------------------*/
-
-.ubicacion {
-    margin: 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: self-end;
-}
-
-.direccion p {
-    font-family: "Zain", sans-serif;
-    font-size: 25px;
-    padding: 5px;
-    text-align: left;
-}
-
-.consulta h2 {
-    font-family: "Zain", sans-serif;
-    color: white;
-    background-color: #464545;
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-    margin: 25px;
-}
-
-.consulta {
-    margin: 5px;
-    display: block;
-    justify-content: left;
-    align-items: center;
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-}
-
-.consulta form {
-    font-family: "Zain", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    margin: 25px;
-}
-
-/* ------- footer --------------------------------------------------------------------------------------------------------*/
-
-footer img {
-    width: 70px;
-    height: 70px;
-}
-
-footer {
-    text-align: center;
-    background-color: #f54703;
-    font: size 30px;
-    color: white;
-    font-family: "Zain", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /********************************@media query Inicio **********************************************************************/
+@media screen and (max-with: 1440px) {
+    body {
+        padding-top: 70px;
+    }
 
-@media screen and (max-width:1055px) {
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav-link {
+        font-size: 25px;
+        height: auto;
+    }
+
+    .me-2,
+    .btn-warning {
+        font: size 20px;
+        height: auto;
+    }
+
+    .hero h2 {
+        font-size: 45px;
+    }
+
+    .autogestion .autogestion-acceso div {
+        width: 45%;
+        height: auto;
+        margin: 15px;
+    }
+
+    .autogestion .autogestion-acceso div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .vacantes img {
+        width: 35%;
+        height: auto;
+    }
+
+    .misionvisionvalores .misionvisionvalores-tarjetas {
+        height: auto;
+        flex-wrap: wrap;
+        /* Permite que las tarjetas se envuelvan en la siguiente línea */
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .misionvisionvalores-tarjetas .mision,
+    .misionvisionvalores-tarjetas .vision,
+    .misionvisionvalores-tarjetas .valores {
+        width: 45%;
+        /* Dos tarjetas por fila */
+        height: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .niveles .niveles-tarjetas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .niveles .niveles-tarjetas a img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .niveles .niveles-tarjetas img {
+        width: 35%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1350px) {
     .misionvisionvalores .misionvisionvalores-tarjetas {
         height: auto;
         align-items: stretch;
@@ -755,13 +177,16 @@ footer {
     }
 }
 
+
 /*********************media queries Colegio*******************************************************************************************/
 
 @media screen and (max-width: 1340px) {
 
     h1 {
-        font-size: 36px; /* Reduce el tamaño de fuente */
-        margin: 40px 20px; /* Reduce los márgenes laterales */
+        font-size: 36px;
+        /* Reduce el tamaño de fuente */
+        margin: 40px 20px;
+        /* Reduce los márgenes laterales */
     }
 
     .colegio {
@@ -816,10 +241,12 @@ footer {
 
 @media screen and (max-width: 992px) {
     h1 {
-        font-size: 30px; /* Sigue reduciendo el tamaño de fuente */
-        margin: 30px 15px; /* Reduce aún más los márgenes */
+        font-size: 30px;
+        /* Sigue reduciendo el tamaño de fuente */
+        margin: 30px 15px;
+        /* Reduce aún más los márgenes */
     }
-    
+
     .colegio {
         margin: 20px;
     }
@@ -861,9 +288,12 @@ footer {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 26px; /* Más pequeño para pantallas de tablet y móviles grandes */
-        margin: 25px 10px; /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
-        padding: 3px; /* Pequeño ajuste en el padding si es necesario */
+        font-size: 26px;
+        /* Más pequeño para pantallas de tablet y móviles grandes */
+        margin: 25px 10px;
+        /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
+        padding: 3px;
+        /* Pequeño ajuste en el padding si es necesario */
     }
 
     .colegio {
@@ -928,8 +358,10 @@ footer {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 22px; /* Tamaño adecuado para la mayoría de los smartphones */
-        margin: 20px 8px; /* Márgenes más pequeños para dejar espacio al contenido */
+        font-size: 22px;
+        /* Tamaño adecuado para la mayoría de los smartphones */
+        margin: 20px 8px;
+        /* Márgenes más pequeños para dejar espacio al contenido */
     }
 
     .colegio {
@@ -976,8 +408,10 @@ footer {
 
 @media screen and (max-width: 350px) {
     h1 {
-        font-size: 18px; /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
-        margin: 15px 5px; /* Márgenes muy reducidos */
+        font-size: 18px;
+        /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
+        margin: 15px 5px;
+        /* Márgenes muy reducidos */
     }
 
     .colegio {
@@ -1023,8 +457,10 @@ footer {
 /***********************queries Niveles ********************************************************************************************/
 @media screen and (max-width: 1259px) {
     h1 {
-        font-size: 36px; /* Reduce el tamaño de fuente */
-        margin: 40px 20px; /* Reduce los márgenes laterales */
+        font-size: 36px;
+        /* Reduce el tamaño de fuente */
+        margin: 40px 20px;
+        /* Reduce los márgenes laterales */
     }
 
     .nivelinicial,
@@ -1096,8 +532,10 @@ footer {
     }
 
     h1 {
-        font-size: 30px; /* Sigue reduciendo el tamaño de fuente */
-        margin: 30px 15px; /* Reduce aún más los márgenes */
+        font-size: 30px;
+        /* Sigue reduciendo el tamaño de fuente */
+        margin: 30px 15px;
+        /* Reduce aún más los márgenes */
     }
 
     .nivelinicial,
@@ -1144,9 +582,12 @@ footer {
     }
 
     h1 {
-        font-size: 26px; /* Más pequeño para pantallas de tablet y móviles grandes */
-        margin: 25px 10px; /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
-        padding: 3px; /* Pequeño ajuste en el padding si es necesario */
+        font-size: 26px;
+        /* Más pequeño para pantallas de tablet y móviles grandes */
+        margin: 25px 10px;
+        /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
+        padding: 3px;
+        /* Pequeño ajuste en el padding si es necesario */
     }
 
     .nivelinicial,
@@ -1212,8 +653,10 @@ footer {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 22px; /* Tamaño adecuado para la mayoría de los smartphones */
-        margin: 20px 8px; /* Márgenes más pequeños para dejar espacio al contenido */
+        font-size: 22px;
+        /* Tamaño adecuado para la mayoría de los smartphones */
+        margin: 20px 8px;
+        /* Márgenes más pequeños para dejar espacio al contenido */
     }
 
     .nivelinicial,
@@ -1252,8 +695,10 @@ footer {
 
 @media screen and (max-width: 350px) {
     h1 {
-        font-size: 18px; /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
-        margin: 15px 5px; /* Márgenes muy reducidos */
+        font-size: 18px;
+        /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
+        margin: 15px 5px;
+        /* Márgenes muy reducidos */
     }
 
     .nivelinicial,
@@ -1311,8 +756,10 @@ footer {
 
 @media screen and (max-width: 1340px) {
     h1 {
-        font-size: 36px; /* Reduce el tamaño de fuente */
-        margin: 40px 20px; /* Reduce los márgenes laterales */
+        font-size: 36px;
+        /* Reduce el tamaño de fuente */
+        margin: 40px 20px;
+        /* Reduce los márgenes laterales */
     }
 
     .pastoral-logo {
@@ -1330,8 +777,10 @@ footer {
 
 @media screen and (max-width: 992px) {
     h1 {
-        font-size: 30px; /* Sigue reduciendo el tamaño de fuente */
-        margin: 30px 15px; /* Reduce aún más los márgenes */
+        font-size: 30px;
+        /* Sigue reduciendo el tamaño de fuente */
+        margin: 30px 15px;
+        /* Reduce aún más los márgenes */
     }
 
     .pastoral h2 {
@@ -1376,9 +825,12 @@ footer {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 26px; /* Más pequeño para pantallas de tablet y móviles grandes */
-        margin: 25px 10px; /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
-        padding: 3px; /* Pequeño ajuste en el padding si es necesario */
+        font-size: 26px;
+        /* Más pequeño para pantallas de tablet y móviles grandes */
+        margin: 25px 10px;
+        /* Reduce los márgenes para no ocupar tanto espacio vertical/horizontal */
+        padding: 3px;
+        /* Pequeño ajuste en el padding si es necesario */
     }
 
     .pastoral h2 {
@@ -1429,8 +881,10 @@ footer {
 
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 22px; /* Tamaño adecuado para la mayoría de los smartphones */
-        margin: 20px 8px; /* Márgenes más pequeños para dejar espacio al contenido */
+        font-size: 22px;
+        /* Tamaño adecuado para la mayoría de los smartphones */
+        margin: 20px 8px;
+        /* Márgenes más pequeños para dejar espacio al contenido */
     }
 
     .pastoral h2 {
@@ -1475,8 +929,10 @@ footer {
 
 @media screen and (max-width: 350px) {
     h1 {
-        font-size: 18px; /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
-        margin: 15px 5px; /* Márgenes muy reducidos */
+        font-size: 18px;
+        /* Mínimo tamaño para asegurar legibilidad en pantallas muy pequeñas */
+        margin: 15px 5px;
+        /* Márgenes muy reducidos */
     }
 
     .pastoral h2 {
@@ -1508,7 +964,7 @@ footer {
 /***********************************************************queries contacto *****************************************************/
 
 @media screen and (max-width: 1340px) {
-    
+
     .ubicacion {
         margin: 60px 20px;
         /* Reducir márgenes */
