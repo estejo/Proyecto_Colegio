@@ -6,12 +6,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
 
-    h2 {
+    h1 {
         font-family: "Zain", sans-serif;
         font-size: nth($font-size, 7);
         font-style: normal;
@@ -38,19 +36,20 @@
 
     .autogestion-acceso {
         background-color: white;
-        display: flex;
+        @include flex (flex, center, center);
+        /*display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
 
         h2 {
             color: white;
             text-align: center;
-            background-color: #1b1b1b;
+            background-color: $color-five;
             text-decoration: none;
             margin: 25px;
             padding: 5px;
             border-radius: 15px;
-            transition: 0.5ms;
+            transition: 0.10ms;
         }
 
         div {
@@ -68,7 +67,7 @@
 
             a {
                 @extend %boton;
-                transition: 0.5;
+                transition: 0.10ms;
             }
         }
     }
@@ -87,7 +86,7 @@
     text-decoration: none;
     display: block;
     align-items: normal;
-    transition: 0.5 ms;
+    transition: 0.10ms;
 
     h2 {
         width: 100%;
@@ -108,6 +107,7 @@
 
 .vacantes div:hover {
     transform: scale(1.1);
+    transition: 0.10ms;
 }
 
 .fechaexamen {
@@ -122,9 +122,7 @@
     .misionvisionvalores-tarjetas {
         width: 100%;
         height: 250px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex (flex, space-around, center);
         text-align: center;
         font-family: "Zain", sans-serif;
         color: white;
@@ -143,23 +141,24 @@
 
         .mision {
             background-color: $color-five;
+            transition: 0.10ms;
         }
 
         .vision {
             background-color: $color-one;
+            transition: 0.10ms;
         }
 
         .valores {
             background-color: $color-two;
             align-items: baseline;
+            transition: 0.10ms;
         }
     }
 
     .mision {
-    div {
         &:hover {
-            background-color: #1b1b1bbe;
-            }
+            background-color: #6d5d5d;
         }
     }
 
@@ -176,19 +175,10 @@
     }
 }
 
-/*.misionvisionvalores-tarjetas div:hover{
-    transition: 1ms;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}*/
-
 .niveles {
     text-align: center;
     text-decoration: none;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (block, space-between, center);
 
     h2 {
         width: 100%;
@@ -204,19 +194,20 @@
         div {
             width: 100%;
             background-color: white;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex (flex, space-evenly, center);
             margin: 5px;
 
             a {
                 img {
                     width: 50%;
                     height: auto;
-                    transition: 1 ms;
+                    transition: 1ms;
                 }
             }
         }
+    }
+    .niveles-tarjetas img:hover {
+    transform: scale(0.8);
     }
 }
 
@@ -231,10 +222,10 @@
     img {
         width: 70%;
         height: 50%;
-        transition: 0.5ms;
+        transition: 0.10ms;
     }
 }
 
 .MED img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }

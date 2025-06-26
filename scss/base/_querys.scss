@@ -143,6 +143,11 @@
         margin: 0px;
         padding: 0px;
     }
+
+    .niveles .niveles-tarjetas img {
+        width: 33%;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:594px) {
@@ -332,7 +337,7 @@
         width: 98%;
         font-size: 15px;
         padding: 5px;
-        margin: 8px auto;
+        margin: 10px auto;
     }
 
     footer {
@@ -402,7 +407,7 @@
     .autoridades li {
         font-size: 14px;
         padding: 5px;
-        margin: 5px auto;
+        margin: 10px auto;
     }
 }
 
@@ -450,7 +455,7 @@
     .autoridades li {
         font-size: 13px;
         padding: 3px;
-        margin: 5px auto;
+        margin: 10px auto;
     }
 }
 
@@ -627,27 +632,25 @@
         gap: 5px;
         /* Reducir espacio entre imágenes */
         margin: 20px 8px;
-    }
 
-    /* Quitar cualquier expansión de grid en una sola columna */
-    .img-7,
-    .img-4,
-    .img-6,
-    .img-5,
-    .img-1,
-    .img-3 {
-        grid-column: auto;
-        grid-row: auto;
-    }
+        /* Quitar cualquier expansión de grid en una sola columna */
+        .img-7,
+        .img-4,
+        .img-6,
+        .img-5,
+        .img-1,
+        .img-3 {
+            grid-column: auto;
+            grid-row: auto;
+        }
 
-    /* las imágenes ocupan todo el ancho disponible */
-    .grid-galeria-inicial div img,
-    .grid-galeria-primaria div img,
-    .grid-galeria-secundaria div img {
-        height: auto;
-        /* la altura se ajusta */
-        max-height: 250px;
-        /* Limitar la altura para evitar imágenes muy grandes */
+        /* las imágenes ocupan todo el ancho disponible */
+        div img {
+            height: auto;
+            /* la altura se ajusta */
+            max-height: 250px;
+            /* Limitar la altura para evitar imágenes muy grandes */
+        }
     }
 }
 
@@ -963,7 +966,7 @@
 
 /***********************************************************queries contacto *****************************************************/
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1346px) {
 
     .ubicacion {
         margin: 60px 20px;
@@ -1004,8 +1007,11 @@
         margin: 20px;
     }
 
-    .consulta form {
-        margin: 20px;
+    .consulta div form {
+        /*margin: 20px;*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -1036,11 +1042,15 @@
         margin: 15px;
     }
 
-    .consulta form {
-        margin: 15px;
+    .consulta div {
+        /*margin: 15px;
+        align-items: center;*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .consulta form {
+    .consulta div form {
         font-size: 16px;
         font-size: 18px;
         padding: 8px 15px;
@@ -1082,11 +1092,14 @@
         margin: 10px;
     }
 
-    .consulta form {
+    .consulta div form {
         margin: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .consulta form {
+    .consulta font {
         font-size: 15px;
         font-size: 16px;
         padding: 7px 12px;
@@ -1135,8 +1148,11 @@
         margin: 8px;
     }
 
-    .consulta form {
+    .consulta div form {
         margin: 8px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .consulta form {
@@ -1169,10 +1185,13 @@
         margin: 5px;
     }
 
-    .consulta form {
+    .consulta div form {
         margin: 5px;
         font-size: 13px;
         padding: 4px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer div {

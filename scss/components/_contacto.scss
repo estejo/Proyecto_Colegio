@@ -1,27 +1,23 @@
 .ubicacion {
     margin: 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: self-end;
+    @include flex (flex, space-around, center);
 
     .direccion {
         p {
             font-family: "Zain", sans-serif;
-            font-size: nth($font-size, 4);
-            padding: 5px;
+            font-size: nth($font-size, 3);
+            padding: auto;
+            text-align: left;
+        }
+        h3{
+            font-weight: bold;
+            font-size: nth($font-size, 3);
             text-align: left;
         }
     }
 }
 
 .consulta {
-    margin: 5px;
-    display: block;
-    justify-content: left;
-    align-items: center;
-    font-family: "Zain", sans-serif;
-    font-size: nth($font-size, 2);
-
     h2 {
         color: white;
         background-color: $color-five;
@@ -30,11 +26,68 @@
         padding: 5px;
         margin: 25px;
     }
+}
 
-    form {
-        font-family: "Zain", sans-serif;
-        font-size: nth($font-size, 2);
-        padding: 5px;
-        margin: 25px;
+.consulta-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgb(128, 125, 125) , #f3f6fa);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-family: "Zain", sans-serif;
+    color: white;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: black;
+        font-weight: 600;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 1.5rem;
+        border: 1px solid $color-one;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 1rem;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: $color-five;
+            box-shadow: 0 0 5px $color-four;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .boton {
+        @extend %boton;
+        display: flex;
+        align-items: center;
+        width: auto;
+        padding: 14px;
+        font-size: 1rem;
+        /*font-weight: bold;*/
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: $color-five;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            background-color: $color-five;
+        }
     }
 }
